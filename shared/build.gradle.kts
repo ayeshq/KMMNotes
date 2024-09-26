@@ -55,3 +55,11 @@ android {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
 }
+
+sqldelight {
+    databases {
+        create("NotesDatabase") {
+            packageName.set("com.kmm.notes.db")
+        }
+    }
+}
